@@ -57,19 +57,19 @@
                 var serverMsg = document.getElementById( "server-status-msg" );
                 var serverImg = document.getElementById( "server-status-img" );
                 if (data < 1000){
-                    serverMsg.innerHTML ='Up and reachable';
-                    serverImg.src = "assets/img/ipad-hand-on.png";
+                    serverMsg.innerHTML ='Online';
+                    serverImg.src = "assets/img/tuzki-14.gif";
                     body.addClass('online').removeClass("offline");
                 }else{
-                    serverMsg.innerHTML = 'Down and unreachable';
-                    serverImg.src = "assets/img/ipad-hand-off.png";
+                    serverMsg.innerHTML = 'Offline';
+                    serverImg.src = "assets/img/tuzki-13.gif";
                 }
             }, timeout);
         }
     </script>
 
 
-    <title>Plex Server</title>
+    <title>Plex Server Page</title>
     	
 
     <!-- Bootstrap core CSS -->
@@ -93,7 +93,7 @@
           
           </button>
           <a href="http://bryansiebert.com/plex"
-          <a class="navbar-brand" href="#"><b>Plex Server</b></a>
+          <a class="navbar-brand" href="#"><b>Plex Server Page</b></a>
         </div>
         
           </ul>
@@ -112,24 +112,24 @@
 			<div class="col-lg-4">
 				<a href="http://app.plex.tv/web/app" target="_top">
 				<img src="assets/img/s01.png" width="180" alt="">
-				<h4>Access Plex</h4>
-				<p>Access the Plex library with over 4 Movies & 3 and a half TV Shows available instantly.<p>
+				<h4>Access</h4>
+				<p>Access the Plex library<p>
 					</a>
 			</div><!--/col-lg-4 -->
 
 			<div class="col-lg-4">
 				<a href="http://199.241.143.184:3579/" target="_top">
 				<img src="assets/img/s02.png" width="180" alt="">
-				<h4>Request</h4>
-				<p>Want to watch a Movie or TV Show but it's not currently on Plex? Request it here!</p>
+				<h4>Add</h4>
+				<p>Add a Movie or TV Show to Plex</p>
 </a>
 			</div><!--/col-lg-4 -->
 
 		<!	<div class="col-lg-4">
 				<a href="http://bryansiebert.com/plex" target="_top">
 				<img src="assets/img/s03.png" width="180" alt="">
-				<h4>What's New</h4>
-				<p>Temporary button.</p>
+				<h4>Nothing</h4>
+				<p>This does nothing</p>
 </a>
 			</div><!--/col-lg-4 -->
 		</div><!-- /row -->
@@ -152,7 +152,7 @@
 					  				
 				</div><!-- /col-lg-6 -->
 				<div class="col-lg-6">
-					<img id="server-status-img" class="img-responsive" src="assets/img/ipad-hand.png" alt="">
+					<img id="server-status-img" class="img-responsive" src="assets/img/tuzki-05.gif" alt="">
 				</div><!-- /col-lg-6 -->
 				
 			</div><!-- /row -->
