@@ -1,18 +1,70 @@
-
-<!doctype html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bryan Siebert</title>
-	<link rel="stylesheet" type="text/css" href="./css/index.css">
-</head>
-<body>
-    <div class="main">
-            <div class="wrap">
-                <div id="bs">BS</div>
-            </div>
-    </div>
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Bryan Siebert</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- jquery -->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        
+        <!-- font awesome -->
+        <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        
+        <!-- css -->
+        <link href="css/stylesheet.css" rel="stylesheet">
+        <!-- animate.css -->
+        <link rel="stylesheet" href="css/animate.min.css">
+        
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+        
+        <!-- favicon -->
+        <!-- <link rel="icon" type="image/png" href="favicon.png" sizes="192x192"> -->
+    </head>
     
-</body>
+    <body>
+        <div class="panel">
+            <div id="welcome" class="panel">
+                <div id="header">
+                    <div id="name" class="wow flipInX">Bryan Siebert</div>
+                    <div id="name-sub" class="wow flipInX">Software Engineer | Web Developer</div>
+                </div>
+                <div class="navbar">
+
+                </div>
+                <i id="scroll" class="fa fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            
+            <div id="about" class="panel">
+                <h1 class="title wow fadeInUp">About Me</h1>
+                <ul class="wow fadeInUp" align="center" style="list-style: none;">
+                    <li>Hello</li>
+                    <li>My name is Bryan</li>
+                    <li>I graduated from UCSD in 2016</li>
+                    <li>With a B.S. degree in Computer Science</li>
+                    <li>I enjoy watching movies, playing games, and making cool things.</li>
+                </ul>
+            </div>
+            
+            <div id="projects" class="panel">
+                <h2 class="title wow fadeInUp">Projects</h2>
+                <ul class="wow fadeInUp" align="center" style="list-style: none;"><li>Coming Soon!</li></ul>
+            </div>
+        </div>
+    </body>
+    
+    <!-- wow.js -->
+    <script src="js/wow.min.js"></script>  
+    <script>
+        new WOW().init();
+    </script>
+    
+    <script>
+        $("#scroll").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#about").offset().top
+            }, 500);
+        });
+    </script>
 </html>

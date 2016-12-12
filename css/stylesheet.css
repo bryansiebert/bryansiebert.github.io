@@ -1,0 +1,118 @@
+* {
+  margin:0;
+  padding:0;
+}
+
+html, body {
+    background-color: #ffffff;
+    font-family: 'PT Sans', sans-serif;
+    height: 100%;
+}
+
+.panel{
+    width: 100%;
+    height: 100%;
+}
+
+/* WELCOME PANEL */
+#welcome{
+    position: relative;
+    height: 99%;
+    background-color:#29b6f6;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* ABOUT PANEL */
+#about{
+    height: 50%;
+    background-color:#ffffff; 
+    overflow-x: hidden;
+}
+
+
+/* PROJECTS PANEL*/
+#projects{
+    height: 50%;
+    background-color:#eeeeee;
+    overflow-x: hidden;
+}
+
+/* MOBILE */
+#name{
+    font-size: 50px;
+    font-size: 15vw;
+    text-align: center;
+}
+
+#name-sub{
+    margin: 0 auto;
+    font-size: 4vw;
+}
+
+#header{
+    height: 50%;
+    width: 100%
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+#scroll{
+    position: absolute;
+    cursor: pointer;
+    font-size: 10vw;
+    bottom: 10px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+#scroll:hover {
+    -webkit-animation: pulse infinite 1s;
+    animation: pulse infinite 1s;
+}
+
+.title{
+    font-size: 35px;
+    font-size: 10vw;
+    text-align: center;
+    margin-top: 10px;
+}
+
+li{
+    font-size: 15px;
+    font-size: 5vw;
+    margin: 5px;
+}
+
+/* DESKTOP */
+@media (min-width: 650px){
+    #name{
+        font-size: 100px;
+        font-size: calc(75px + 3vw);
+    }
+    
+    #name-sub{
+        font-size: 30px;
+        font-size: calc(15px + 1vw);
+    }
+    
+    .title{
+        font-size: 75px;
+        font-size: calc(20px + 3vw);
+    }
+    
+    #scroll{
+        font-size: calc(20px + 3vw);
+    }
+    
+    li{
+        font-size: 15px;
+        font-size: calc(20px + 1vw);;
+    }
+}
