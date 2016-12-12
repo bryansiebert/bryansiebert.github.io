@@ -22,6 +22,7 @@ html, body {
     color: white;
     text-align: center;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 /* ABOUT PANEL */
@@ -29,6 +30,7 @@ html, body {
     height: 50%;
     background-color:#ffffff; 
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 
@@ -37,6 +39,7 @@ html, body {
     height: 50%;
     background-color:#eeeeee;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 /* MOBILE */
