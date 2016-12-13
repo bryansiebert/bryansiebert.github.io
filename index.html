@@ -29,6 +29,7 @@
                 <div id="header">
                     <div id="name" class=""></div>
                     <div id="name-sub" class="">Software Engineer | Web Developer</div>
+                    <button id="resume">Download Resume</button>
                 </div>
                 <div class="navbar">
 
@@ -39,11 +40,11 @@
             <div id="about" class="panel">
                 <h1 class="title wow fadeInUp">About Me</h1>
                 <ul class="wow fadeInUp" align="center" style="list-style: none;">
-                    <li>Hello</li>
-                    <li>My name is Bryan</li>
-                    <li>I graduated from UCSD in 2016</li>
-                    <li>With a B.S. degree in Computer Science</li>
-                    <li>I enjoy watching movies, playing games, and making cool things.</li>
+                    <li>hello</li>
+                    <li>my name is bryan</li>
+                    <li>i graduated from ucsd in 2016</li>
+                    <li>with a b.s. degree in computer science</li>
+                    <li>i enjoy <a href="https://trakt.tv/users/xbry23/history/movies/released?genres=" target="_blank" class="nodec-link">watching movies</a>, <a href="https://www.youtube.com/watch?v=35grqVNUVUA" target="_blank" class="nodec-link">playing games</a>, and <a id="coolthings" style="cursor: pointer;" class="nodec-link">making cool things</a></li>
                 </ul>
             </div>
             
@@ -68,8 +69,8 @@
                 strings: ["Bryan Siebert"],
                 typeSpeed: 50,
                 callback: function() { var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-                    setTimeout(function(){$('#name-sub').attr('style', 'visibility:     visible;'); $('#name-sub').addClass("animated flipInX").one(animationEnd, function() {
-            $('#scroll').addClass('animated bounce');
+                    setTimeout(function(){$('#name-sub').attr('style', 'visibility: visible;'); $('#name-sub').addClass("animated flipInX").one(animationEnd, function() { $('#resume').attr('style', 'visibility: visible;');
+            $('#resume').addClass('animated fadeIn').one(animationEnd, function() {$('#scroll').addClass('animated bounce')});
         });}, 300);}
             });
         });
@@ -79,6 +80,11 @@
         $("#scroll").click(function() {
             $('html, body').animate({
                 scrollTop: $("#about").offset().top
+            }, 500);
+        });
+        $("#coolthings").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#projects").offset().top
             }, 500);
         });
     </script>

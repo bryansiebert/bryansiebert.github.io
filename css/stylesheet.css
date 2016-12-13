@@ -9,6 +9,11 @@ html, body {
     height: 100%;
 }
 
+.nodec-link{
+    text-decoration: none;
+    color: #29b6f6
+}
+
 .panel{
     width: 100%;
     height: 100%;
@@ -33,11 +38,26 @@ html, body {
     overflow-y: hidden;
 }
 
+/* SKILLS PANEL */
+#skills{
+    height: 100%;
+    background-color:#ffffff; 
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
 
 /* PROJECTS PANEL*/
 #projects{
     height: 100%;
     background-color:#eeeeee;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* CONTACT PANEL */
+#contact{
+    height: 100%;
+    background-color:#ffffff; 
     overflow-x: hidden;
     overflow-y: hidden;
 }
@@ -87,6 +107,19 @@ html, body {
     animation: pulse infinite 1s;
 }
 
+#resume{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    font-size: 3vw;
+    padding: 10px;
+    margin-top: 5%;
+    cursor:pointer;
+    overflow: hidden;
+    visibility: hidden;
+}
+
 .title{
     font-size: 35px;
     font-size: 10vw;
@@ -115,6 +148,11 @@ li{
     #name-sub{
         font-size: 30px;
         font-size: calc(15px + 1vw);
+    }
+    
+    #resume{
+        font-size: 20px;
+        font-size: calc(10px +1vw);
     }
     
     .title{
