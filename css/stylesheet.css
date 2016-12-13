@@ -27,7 +27,7 @@ html, body {
 
 /* ABOUT PANEL */
 #about{
-    height: 50%;
+    height: 100%;
     background-color:#ffffff; 
     overflow-x: hidden;
     overflow-y: hidden;
@@ -36,26 +36,33 @@ html, body {
 
 /* PROJECTS PANEL*/
 #projects{
-    height: 50%;
+    height: 100%;
     background-color:#eeeeee;
     overflow-x: hidden;
     overflow-y: hidden;
 }
 
 /* MOBILE */
-#name{
+#name {
     font-size: 50px;
     font-size: 15vw;
     text-align: center;
+    display: inline;
+}
+
+.typed-cursor {
+    font-size: 50px;
+    font-size: 15vw;
 }
 
 #name-sub{
     margin: 0 auto;
     font-size: 4vw;
+    visibility: hidden;
 }
 
 #header{
-    height: 50%;
+    height: 40%;
     width: 100%
     overflow: auto;
     margin: auto;
@@ -95,7 +102,12 @@ li{
 
 /* DESKTOP */
 @media (min-width: 650px){
-    #name{
+    #name {
+        font-size: 100px;
+        font-size: calc(75px + 3vw);
+    }
+    
+    .typed-cursor {
         font-size: 100px;
         font-size: calc(75px + 3vw);
     }
@@ -118,4 +130,29 @@ li{
         font-size: 15px;
         font-size: calc(20px + 1vw);;
     }
+}
+
+
+
+/* TYPED.JS */
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }

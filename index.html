@@ -27,8 +27,8 @@
         <div class="panel">
             <div id="welcome" class="panel">
                 <div id="header">
-                    <div id="name" class="wow flipInX">Bryan Siebert</div>
-                    <div id="name-sub" class="wow flipInX">Software Engineer | Web Developer</div>
+                    <div id="name" class=""></div>
+                    <div id="name-sub" class="">Software Engineer | Web Developer</div>
                 </div>
                 <div class="navbar">
 
@@ -58,6 +58,21 @@
     <script src="js/wow.min.js"></script>  
     <script>
         new WOW().init();
+    </script>
+    
+    <!-- typed.js -->
+    <script src="js/typed.min.js"></script>
+    <script>
+        $(function(){
+            $("#name").typed({
+                strings: ["Bryan Siebert"],
+                typeSpeed: 50,
+                callback: function() { var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+                    setTimeout(function(){$('#name-sub').attr('style', 'visibility:     visible;'); $('#name-sub').addClass("animated flipInX").one(animationEnd, function() {
+            $('#scroll').addClass('animated bounce');
+        });}, 300);}
+            });
+        });
     </script>
     
     <script>
