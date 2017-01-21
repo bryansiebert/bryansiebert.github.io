@@ -19,6 +19,7 @@ html, body {
     height: 100%;
 }
 
+
 /* WELCOME PANEL */
 #welcome{
     position: relative;
@@ -30,12 +31,24 @@ html, body {
     overflow-y: hidden;
 }
 
+
 /* ABOUT PANEL */
 #about{
-    height: 100%;
     background-color:#ffffff; 
     overflow-x: hidden;
     overflow-y: hidden;
+}
+
+#profilepic{
+    size: 25%;
+    max-width: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#about-list{
+    margin-bottom: 50px;
 }
 
 /* SKILLS PANEL */
@@ -48,11 +61,58 @@ html, body {
 
 /* PROJECTS PANEL*/
 #projects{
-    height: 100%;
+    height: auto;
     background-color:#eeeeee;
     overflow-x: hidden;
     overflow-y: hidden;
 }
+.project-cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    -webkit-justify-content: center;
+	justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 10%;
+}
+.card{
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 25%;
+    max-width: 500px;
+    margin: 20px;
+}
+.card-pic > img {
+  height: auto;
+  width: 100%;
+  vertical-align: middle;
+}
+.card-text{
+    margin: 10px 50px 50px 50px;
+    text-align: center;
+    color: black;
+}
+@media (max-width: 1200px){
+    .card{
+        width: 45%;
+    }
+}
+@media (max-width: 800px){
+    .card{
+        width: 95%;
+    }
+}
+.grow { transition: all .2s ease-in-out;}
+.grow:hover {-webkit-transform: scale(1.01);
+        -ms-transform: scale(1.01);
+        transform: scale(1.01);}
+
+
 
 /* CONTACT PANEL */
 #contact{
@@ -61,6 +121,7 @@ html, body {
     overflow-x: hidden;
     overflow-y: hidden;
 }
+
 
 /* MOBILE */
 #name {
@@ -170,6 +231,11 @@ li{
     }
 }
 
+
+.center{
+    margin: 0 auto;
+    text-align: center;
+}
 
 
 /* TYPED.JS */

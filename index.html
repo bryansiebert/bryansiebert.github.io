@@ -17,10 +17,10 @@
         <link rel="stylesheet" href="css/animate.min.css">
         
         <!-- font -->
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans|Raleway" rel="stylesheet">
         
         <!-- favicon -->
-        <!-- <link rel="icon" type="image/png" href="favicon.png" sizes="192x192"> -->
+        <link rel="icon" type="image/png" href="favicon.png" sizes="192x192">
     </head>
     
     <body>
@@ -29,7 +29,7 @@
                 <div id="header">
                     <div id="name" class=""></div>
                     <div id="name-sub" class="">Software Engineer | Web Developer</div>
-                    <button id="resume">Download Resume</button>
+                    <a href="Bryan_Siebert_Resume.pdf"><button id="resume">Download Resume</button></a>
                 </div>
                 <div class="navbar">
 
@@ -37,9 +37,10 @@
                 <i id="scroll" class="fa fa-chevron-down" aria-hidden="true"></i>
             </div>
             
-            <div id="about" class="panel">
+            <div id="about">
                 <h1 class="title wow fadeInUp">About Me</h1>
-                <ul class="wow fadeInUp" align="center" style="list-style: none;">
+                <div class="center"><img id="profilepic" class="wow fadeInUp" src="images/me.jpg"></div>
+                <ul id="about-list" class="wow fadeInUp" align="center" style="list-style: none;">
                     <li>hello</li>
                     <li>my name is bryan</li>
                     <li>i graduated from ucsd in 2016</li>
@@ -48,9 +49,28 @@
                 </ul>
             </div>
             
-            <div id="projects" class="panel">
+            <div id="projects">
                 <h2 class="title wow fadeInUp">Projects</h2>
-                <ul class="wow fadeInUp" align="center" style="list-style: none;"><li>Coming Soon!</li></ul>
+                <div class="project-cards">
+                    <a href="http://prioriti.herokuapp.com" target="_blank" class="nodec-link card grow wow fadeInUp">
+                        <div class="card-pic">
+                            <img src="images/prioriti-thumbnail.png">
+                        </div>
+                        <div class="card-text">
+                            <h1>Prioriti</h1><br>
+                            Prioriti is a webapp that allows users to manage their tasks. Tasks are viewed as bubbles that vary by size and color depending on when the task is due. Features include the ability to register/login, add/edit/delete tasks and multiple task views.
+                        </div>
+                    </a>
+                    <a href="http://funshopping.herokuapp.com" target="_blank" class="nodec-link card grow wow fadeInUp">
+                        <div class="card-pic">
+                            <img src="images/shopping-thumbnail.png">
+                        </div>
+                        <div class="card-text">
+                            <h1>SQuirreLs</h1><br>
+                            This is a shopping website that allows users to search for and add products to a shopping cart. It then allows the users to purchase these items. Owners can also easily add/edit/delete products and categories.
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </body>
@@ -68,6 +88,7 @@
             $("#name").typed({
                 strings: ["Bryan Siebert"],
                 typeSpeed: 50,
+                startDelay: 500,
                 callback: function() { var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
                     setTimeout(function(){$('#name-sub').attr('style', 'visibility: visible;'); $('#name-sub').addClass("animated flipInX").one(animationEnd, function() { $('#resume').attr('style', 'visibility: visible;');
             $('#resume').addClass('animated fadeIn').one(animationEnd, function() {$('#scroll').addClass('animated bounce')});
