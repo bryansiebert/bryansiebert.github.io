@@ -87,12 +87,13 @@
         $(function(){
             $("#name").typed({
                 strings: ["Bryan Siebert"],
-                typeSpeed: 50,
+                typeSpeed: 25,
                 startDelay: 500,
                 callback: function() { var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-                    setTimeout(function(){$('#name-sub').attr('style', 'visibility: visible;'); $('#name-sub').addClass("animated flipInX").one(animationEnd, function() { $('#resume').attr('style', 'visibility: visible;');
-            $('#resume').addClass('animated fadeIn').one(animationEnd, function() {$('#scroll').addClass('animated bounce')});
-        });}, 300);}
+                    setTimeout(function(){$('#name-sub').attr('style', 'visibility: visible;'); 
+                                          $('#name-sub').addClass("animated flipInX"); 
+                                          $('#resume').attr('style', 'visibility: visible;');
+                                          $('#resume').addClass('animated fadeIn').one(animationEnd, function() {$('#scroll').addClass('animated bounce')});}, 300);}
             });
         });
     </script>
